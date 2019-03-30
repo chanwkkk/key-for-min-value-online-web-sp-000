@@ -31,7 +31,7 @@ def key_for_min_value(hash)
   lowest_key = nil
   lowest_value = nil
   hash.each do |k, v|
-    if lowest_value == nil || v < lowest_value
+    if lowest_value == nil || v < lowest_value#at first I dont know how to compare 'nil' and values, but I should do like this, just try to assign the vale first no matter what
       lowest_value = v
       lowest_key = k
     end
