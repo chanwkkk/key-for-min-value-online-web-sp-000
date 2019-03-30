@@ -1,6 +1,7 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 require 'pry'
+#the following one is not simple at all because I cannot find a way to get the first key/value pair. But the second one will be a very good solution
 #def key_for_min_value(name_hash)
   #if name_hash=={}
   #  return nil
@@ -12,18 +13,18 @@ require 'pry'
 #  min_value=values_array[0]
 
   #values_array.each do |value|
-    if value<min_value
-      min_value=value
-    end
-  end
+#    if value<min_value
+#      min_value=value
+#    end
+#  end
 
-  name_hash.each do |name,value|
-    if value==min_value
-      return name
-    end
-  end
+#  name_hash.each do |name,value|
+#    if value==min_value
+#      return name
+#    end
+#  end
 
-end
+#end
 #end
 
 def key_for_min_value(hash)
